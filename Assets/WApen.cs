@@ -33,7 +33,6 @@ public class WApen : MonoBehaviour
     void Shoot()
     {
         _audioSource.PlayOneShot(shot);
-        Instantiate(muzzleFlash,bulletSpawn.position,bulletSpawn.rotation);
         muzzleFlash.Play();
 
         RaycastHit hit;
